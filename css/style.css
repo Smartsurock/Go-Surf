@@ -615,6 +615,57 @@ input[type="checkbox"]:checked + span:after {
   }
 }
 
+.point.active {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation: fadeInActive 3s infinite;
+  animation: fadeInActive 3s infinite;
+}
+
+@-webkit-keyframes fadeInActive {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInActive {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .menu {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -785,6 +836,11 @@ input[type="checkbox"]:checked + span:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.dots {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 .dots .slick-current .dots__item {
   border-top: 4px solid #4af6cd;
 }
@@ -820,12 +876,30 @@ input[type="checkbox"]:checked + span:after {
   text-align: center;
 }
 
-.footer__btn span:after {
-  display: none;
+.footer__btn {
+  line-height: 80px;
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  text-align: center;
 }
 
 .footer__btn span {
+  position: relative;
+  display: inline-block;
   padding: 0px 18px;
+  margin: 0px 0px 0px 10px;
+  background-color: #4af6cd;
+}
+
+.footer__btn span:before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  left: -10px;
+  top: 47%;
+  background-color: #fff;
+  position: absolute;
 }
 
 .footer__rights {
@@ -11606,6 +11680,7 @@ body.lock {
   border-radius: 6px;
   background-color: rgba(15, 16, 16, 0.8);
   padding: 25px;
+  z-index: 1;
 }
 
 .map-content__top {
@@ -12961,8 +13036,13 @@ input[type="number"]::-webkit-outer-spin-button {
     right: 9px;
   }
 
+  .footer__btn {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
   .footer__btn span {
-    padding: 0px 18px;
+    line-height: 60px;
   }
 
   .surf {
@@ -13126,13 +13206,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .description-01 {
     top: auto;
-    bottom: 38%;
+    bottom: 500px;
     left: 130px;
   }
 
   .description-02 {
     top: auto;
-    bottom: 33%;
+    bottom: 430px;
     left: 60px;
   }
 
@@ -13142,7 +13222,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .description-03 {
     top: auto;
-    bottom: 7%;
+    bottom: 100px;
     left: 90px;
   }
 }
@@ -13687,8 +13767,13 @@ input[type="number"]::-webkit-outer-spin-button {
     background: url("../img/icons/Header/right.svg") 0 0/cover no-repeat;
   }
 
+  .footer__btn {
+    font-size: 22px;
+    line-height: 50px;
+  }
+
   .footer__btn span {
-    padding: 0px 18px;
+    line-height: 50px;
   }
 
   .surf-slider__column {
