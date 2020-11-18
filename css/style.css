@@ -12199,11 +12199,19 @@ body.lock {
   text-align: center;
   background: transparent;
   color: #fff;
+  -moz-appearance: textfield;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"]::-moz-inner-spin-button,
+input[type="number"]::-moz-outer-spin-button {
+  appearance: none;
+  -moz-appearance: none;
 }
 
 .quantity-button {

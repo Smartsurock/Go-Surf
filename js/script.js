@@ -3870,8 +3870,6 @@ $(document).ready(function () {
 		// fade: true,
 		speed: 1000,
 		asNavFor: '.dots',
-		responsive: [
-		]
 	});
 });
 
@@ -3890,31 +3888,6 @@ $(document).ready(function () {
 		asNavFor: '.slider',
 		// centerMode: true,
 		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 1000,
-				settings: {
-					// slidesToShow: 5
-				}
-			},
-			{
-				breakpoint: 750,
-				settings: {
-					// slidesToShow: 4
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: {
-					// slidesToShow: 3
-				}
-			}, {
-				breakpoint: 400,
-				settings: {
-					// slidesToShow: 2
-				}
-			}
-		]
 	});
 });
 
@@ -3939,13 +3912,6 @@ $(document).ready(function () {
 		infinite: true,
 		focusOnSelect: true,
 		asNavFor: '.surf-slider, .surf__coordinates',
-		responsive: [
-			{
-				breakpoint: 500,
-				settings: {
-				}
-			}
-		]
 	});
 });
 
@@ -3991,13 +3957,6 @@ $(document).ready(function () {
 		infinite: true,
 		focusOnSelect: true,
 		asNavFor: '.map-slider',
-		responsive: [
-			{
-				breakpoint: 500,
-				settings: {
-				}
-			}
-		]
 	});
 });
 
@@ -4012,13 +3971,6 @@ $(document).ready(function () {
 		waitForAnimate: true,
 		infinite: true, 
 		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 500,
-				settings: {
-				}
-			}
-		]
 	});
 });
 
@@ -4033,13 +3985,6 @@ $(document).ready(function () {
 		waitForAnimate: true,
 		infinite: true, 
 		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 500,
-				settings: {
-				}
-			}
-		]
 	});
 });
 
@@ -4054,13 +3999,6 @@ $(document).ready(function () {
 		waitForAnimate: true,
 		infinite: true, 
 		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 500,
-				settings: {
-				}
-			}
-		]
 	});
 });
 //========================================================
